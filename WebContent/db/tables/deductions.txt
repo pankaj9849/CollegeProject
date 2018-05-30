@@ -1,0 +1,15 @@
+create table deductions(
+year number(5),
+month number(2),
+empid varchar2(10),
+empname varchar2(20),
+deptcode varchar2(20),
+desncode varchar2(20),
+oe1 number(5),
+oe2 number(5),
+it number(5),
+od1 number(5),
+od2 number(5),
+od3 number(5),
+ foreign key (empid) references employee(empid))
+/

@@ -1,0 +1,15 @@
+create table employee (empid varchar2(10) primary key,
+empname varchar2(20),
+jdate date,
+dob date,
+address varchar2(20),
+desncode varchar2(20),
+gradecode varchar2(20),
+deptcode varchar2(20),
+salary number(8,2),
+pfindicator varchar2(3),
+pfnumber number(8),
+casualleaves number(5),
+earnedleaves number(5),
+sickleaves number(5))
+/

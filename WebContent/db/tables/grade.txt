@@ -1,0 +1,8 @@
+create table grade(
+gcode varchar2(20) primary key,
+gdesc varchar2(20),
+sbasic number(10,2),
+ebasic number(10,2),
+hra number(5,2),
+con number(5,2))
+/

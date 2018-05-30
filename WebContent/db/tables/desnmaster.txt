@@ -1,0 +1,7 @@
+create table desnmaster(
+deptcode varchar2(20),
+desncode varchar2(20),
+desndesc varchar2(20),
+foreign key (deptcode) references deptmaster (deptcode)
+on delete cascade)
+/

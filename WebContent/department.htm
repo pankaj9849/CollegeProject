@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Deparement Master</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<script language="JavaScript">
+	function back() {
+		document.dept1.action = "./registration.jsp";
+		document.dept1.submit();
+	}
+	function dcode() {
+		var d = document.dept1.deptcode.value;
+		if (!isNaN(d)) {
+			alert("enter any valid dept code");
+			document.dept1.deptcode.focus();
+			document.dept1.deptcode.value = "";
+		}
+	}
+	function ddesc() {
+		var ds = document.dept1.deptdesc.value;
+		if (!isNaN(ds)) {
+			alert("enter any valid dept desc ");
+			document.dept1.deptdesc.focus();
+			document.dept1.deptdesc.value = "";
+		}
+	}
+	function deldept() {
+		document.dept1.action = "./deldept.jsp";
+		document.dept1.submit();
+	}
+</script>
+<form action="./dept_desnmaster.jsp" name="dept1">
+	<body bgcolor="#FFFFCC">
+		<center>
+			<br>
+			<h1>PAY ROLL SYSTEM</h1>
+			<hr>
+			<br>
+			<h3>Department Master</h3>
+			<table>
+				<tr>
+					<td>Dept Code</td>
+					<td><input type="text" name="deptcode" onBlur="dcode()"></td>
+				</tr>
+				<tr>
+					<td>Dept desc</td>
+					<td><input type="text" name="deptdesc" onBlur="ddesc()"></td>
+				</tr>
+			</table>
+			<pre>
+<table>
+<tr>
+						<td>
+<input type="submit" value="SAVE"
+							style="width: 80; height: 20; border: 1px solid #0000FF">
+<input type="reset" value="ADDNEW"
+							style="width: 80; height: 20; border: 1px solid #0000FF">
+<input type="submit" value="DELETE"
+							style="width: 80; height: 20; border: 1px solid #0000FF"
+							onClick="deldept()">
+<input type="submit" value="BACK"
+							style="width: 80; height: 20; border: 1px solid #0000FF"
+							onclick="back()">
+</td>
+					</tr>
+</table>
+</pre>
+		</center>
+	</body>
+</form>
+</html>

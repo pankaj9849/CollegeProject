@@ -1,0 +1,5 @@
+create table deptmaster(
+deptcode varchar2(20) primary key,
+deptdesc varchar2(20))
+
+/

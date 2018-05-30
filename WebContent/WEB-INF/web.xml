@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+<web-app>
+	<servlet>
+		<servlet-name>emp</servlet-name>
+		<servlet-class>active.employee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>emp</servlet-name>
+		<url-pattern>/emp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deduct</servlet-name>
+		<servlet-class>active.deductions</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deduct</servlet-name>
+		<url-pattern>/deduct</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>logout.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
